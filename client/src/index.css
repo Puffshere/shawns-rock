@@ -1,31 +1,36 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("./image/background.jpg");
+  /* background-image: url("./image/background.jpg"); */
+  background-image: linear-gradient(#ffffff,#fdfeff);
   margin-top: 29%;
+  z-index: -5;
 }
 
 .slim{
-  z-index: 2;
+  z-index: -5;
   max-width: 101%;
   opacity: 1.5;
+  outline-style: inset;
 }
 
 .mood {
   z-index: -1;
   max-width: 97%;
-  margin-top: 21%;
+  margin-top: 15%;
   margin-left: -3%;
 }
 
 .sloppy {
-  margin-top: -127%;
+  margin-top: -8%;
   color: white;
   box-shadow: 10px 10px 10px #bfb5b5;
-  background-color: #094152;
-  min-width: 135%;
-  float: left;
-  margin-left: -18%;
+  background-image: linear-gradient(#1c7a98,#031d21);
+  min-width: 370%;
+  margin-left: -123%;
+  z-index: 5;
+  font-family: fantasy;
+  padding-top: 8px;
 }
 
 .spirit {
@@ -38,12 +43,13 @@ body {
 .help {
   z-index: 2;
   margin-top: -26%;
-  text-align: center;
   font-size: 63px;
   color: #0a0907;
-  text-shadow: 10px 5px 10px white;
+  text-shadow: 10px 5px 10px #3c0b0b;
   font-family: fantasy;
-  box-shadow: -3px 5px 5px white;
+  box-shadow: -3px 5px 5px #031d21;
+  margin-right: 7px;
+  margin-left: -4px;
 }
 
 .spirit {
@@ -66,5 +72,16 @@ h1 {
 .lost {
     max-width: 136px;
     margin-left: 198px;
-    margin-top: -762px;
+    margin-top: -726px;
 }
+
+#slip {
+  margin-top: -8%;
+  color: white;
+  box-shadow: 10px 10px 10px #bfb5b5;
+  background-color: #094152;
+  min-width: 370%;
+  margin-left: -123%;
+  z-index: 5;
+}
+

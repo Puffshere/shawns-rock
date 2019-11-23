@@ -56,11 +56,7 @@ export default function Question(props) {
   if (!isFinished) {
     return (
       <div className={styles.container}>
-        <div className='sloppy'>
-        <button onClick={submit} className={styles.btn}>
-          Submit
-        </button>
-        </div>
+        
         <div className='sleep'>
 
         <div className={styles.question}>{questions[q].question}</div>
@@ -101,6 +97,11 @@ export default function Question(props) {
               label={questions[q].answer_d}
               checked={answer == 'd'}
             />
+            <div className='sloppy'>
+        <button onClick={submit} className={styles.btn}>
+          Submit
+        </button>
+        </div>
             
           </RadioGroup>
         </FormControl>
@@ -109,8 +110,13 @@ export default function Question(props) {
   } else if (isFinished) {
     return (
       <div>
-        <h1>You're finished!</h1>
-        <h1>Score: {score}</h1>
+        <button id='slip' onClick={submit} className={styles.btn}>
+          Submit
+        </button>
+        <div className='movement'>
+        <div className='later'>You're finished!</div>
+        </div>
+        <div className='sooner'>Score: {score}</div>
       </div>
     );
   }

@@ -6,14 +6,26 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     text-shadow: 2px 2px 0px black;
-    margin-top: -700px;
+    margin-top: -679px;
     color: #ffba31;
 }
 
-.sleep {
+/* .sleep {
     margin-top: -50px;
-}
+} */
 
 .wall {
     margin-top: 100px;
+}
+
+.movement {
+    margin-top: 50px;
+  }
+
+.later {
+    margin-top: 50px;
+}
+
+.sooner {
+    margin-top: 50px;
 }
