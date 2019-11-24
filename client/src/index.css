@@ -1,6 +1,78 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  background-image: linear-gradient(#d3d3d3,#5a5353);
+  color: white;
+  object-position: 100% 100%;
+  background-size: contain;
+  min-width: 100vw;
+  height: 100vh;
+ }
+
+.card {
+  background-size: contain;
+  float: right;
 }
 
+.scoreStyling {
+  color: black;
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(177, 172, 172); 
+}
+
+.answerStyling {
+  color: black;
+  font-family: fantasy;
+  margin-top: 30px;
+}
+
+.header {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgb(245, 233, 233);
+  color: rgb(70, 69, 69);
+  font-family: fantasy;
+  margin-top: 20px;
+}
+
+hr {
+  max-width: 200px;
+  margin-top: -10px;
+  color: rgb(245, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+
+
+.btn-styling {
+    color: white;
+    background-image: linear-gradient(rgb(87, 151, 146),#38413f);
+    float: right;
+    padding-top:5px;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(46, 45, 45);
+    font-family: fantasy;
+    margin-top: 100px;
+    min-width: 82px;
+  }
+
+  .btn-styling:hover {
+    color: white;
+    background-image: linear-gradient(rgb(66, 114, 110),#202524);
+    float: right;
+  }
+
+  .btn-styling:active{
+    color: white;
+    background-color: rgb(1, 46, 36);
+    float: right;
+  }
+
+.finalPageTallyStyling {
+  text-align: center;
+  text-size-adjust: 50px;
+  text-shadow: 2px 2px 2px rgb(168, 157, 157);
+  color: rgb(85, 32, 32);
+  font-family: fantasy;
+}

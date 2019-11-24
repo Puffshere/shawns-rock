@@ -5,9 +5,23 @@ import QuestionCard from './QuestionCard/index';
 
 function App() {
   return (
-    <div className="App">
-      <Scoreboard />
-      <QuestionCard />
+    <div>
+      <div className='header'>
+        Rock Quiz
+<hr></hr>
+</div>
+      <div className='container'>
+
+        <div className='card col-sm-12'>
+          <QuestionCard />
+        </div>
+
+        <div className='finalScore'>
+          <Scoreboard />
+        </div>
+
+      </div>
+
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function QuestionCard () {
 
 
     return (
-        <div className={styles.container}>
+        <div className='questionStyling'>
         <Question />
         </div>
     );

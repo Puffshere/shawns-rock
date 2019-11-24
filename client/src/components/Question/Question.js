@@ -55,15 +55,16 @@ export default function Question(props) {
 
   if (!isFinished) {
     return (
-      <div className={styles.container}>
-        {errorMessage}
-        <span className={styles.question}>{questions[q].question}</span>
+      <div className='answerStyling'>
+      {errorMessage}
+        <>{questions[q].question}</>
         <FormControl component='fieldset'>
           <RadioGroup
-            className={styles.form}
             name='customized-radios'
             onChange={e => setAnswer(e.target.value)}
-          >
+            >
+              <hr></hr>
+              <div className='answerStyling1'>
             <FormControlLabel
               value='a'
               name='a'
@@ -71,7 +72,7 @@ export default function Question(props) {
               label={questions[q].answer_a}
               checked={answer == 'a'}
             />
-            <FormControlLabel
+            <FormControlLabel 
               value='b'
               name='b'
               control={<StyledRadio />}
@@ -84,7 +85,7 @@ export default function Question(props) {
               control={<StyledRadio />}
               label={questions[q].answer_c}
               checked={answer == 'c'}
-            />
+              />
             <FormControlLabel
               value='d'
               name='d'
@@ -92,16 +93,20 @@ export default function Question(props) {
               label={questions[q].answer_d}
               checked={answer == 'd'}
             />
+            </div>
           </RadioGroup>
         </FormControl>
-        <button onClick={submit} className={styles.btn}>
-          Submit
-        </button>
+        <button className='btn-styling' onClick={submit}>
+      Submit
+    </button>
       </div>
+        
+       
+
     );
   } else if (isFinished) {
     return (
-      <div>
+      <div className='finalPageTallyStyling'>
         <h1>You're finished!</h1>
         <h1>Score: {score}</h1>
       </div>
