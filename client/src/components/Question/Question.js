@@ -96,6 +96,11 @@ export default function Question(props) {
             </div>
           </RadioGroup>
         </FormControl>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+            <hr></hr>
         <button className='btn-styling' onClick={submit}>
       Submit
     </button>
@@ -106,6 +111,7 @@ export default function Question(props) {
     );
   } else if (isFinished) {
     return (
+      
       <div className='finalPageTallyStyling'>
         <h1>You're finished!</h1>
         <h1>Score: {score}</h1>
