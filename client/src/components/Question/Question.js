@@ -99,7 +99,6 @@ export default function Question(props) {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
             <hr></hr>
         <button className='btn-styling' onClick={submit}>
       Submit
