@@ -15,7 +15,7 @@ body {
 }
 
 .scoreStyling {
-  color: black;
+  color: rgb(31, 30, 30);
   font-family: fantasy;
   font-size: 30px;
   float: left;
